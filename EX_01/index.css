@@ -1,0 +1,39 @@
+* {
+    font-family: 'Arial';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+body form #resultado-exibido label {
+    width: 120px;
+    font-size: 15px;
+}
+
+form fieldset {
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+fieldset input {
+    width: 10vw;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}

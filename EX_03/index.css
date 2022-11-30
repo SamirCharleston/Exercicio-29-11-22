@@ -1,0 +1,27 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+article {
+    margin: 1vw 0;
+}
+
+form {
+    text-align: center;
+}
+
+form #enviar {
+    margin-top: 20px;
+}
+
+form fieldset {
+    display: flex;
+    justify-content: space-around;
+    gap: 3vw;
+}
+
+form fieldset div {
+    display: flex;
+    flex-direction: column;
+}

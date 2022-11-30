@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="POST">
+        <article>Faça um algoritmo para ler: número da conta do cliente, saldo, débito e crédito.
+            Em seguida, calcule e apresente o saldo atual (saldo atual = saldo - débito +
+            crédito). Para este exercício, deverão ser apresentadas as mensagens de erro
+            segundo os tópicos abaixo: Também testar se saldo atual for maior ou igual a zero
+            escrever a mensagem 'Saldo Positivo', senão escrever a mensagem 'Saldo
+            Negativo'.
+            <br>
+            a. Se o saldo atual for maior ou igual a zero escrever a mensagem 'Saldo
+            Positivo';
+            <br>
+            b. Se o saldo atual for menor que zero escrever a mensagem 'Saldo Negativo'.
+        </article>
+        <fieldset>
+            <div>
+                <label for="numero_conta">Numero da Conta
+                </label>
+                <input type="number" min="0" id="numero_conta" required>
+
+                <label for="saldo">Saldo
+                </label>
+                <input type="number" min="0" id="saldo" required>
+            </div>
+            <div>
+                <label for="debito">Debito
+                </label>
+                <input type="number" min="0" id="debito" required>
+
+                <label for="credito">Credito
+                </label>
+                <input type="number" min="0" id="credito" required>
+            </div>
+        </fieldset>
+
+        <input type="button" name="enviar" id="enviar" value="Enviar">
+
+        <h2></h2>
+
+        <h3></h3>
+    </form>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

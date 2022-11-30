@@ -1,0 +1,25 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+article {
+    margin: 20px auto;
+}
+
+form fieldset {
+    display: flex;
+    justify-content: space-around;
+}
+
+form fieldset div div {
+    display: flex;
+    justify-content: space-between;
+}
+
+form fieldset .homens,
+form fieldset .mulheres {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

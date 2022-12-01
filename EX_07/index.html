@@ -14,28 +14,20 @@
         <h1>Pesquisa entre habitantes</h1>
 
         <fieldset class="campos">
-            <input type="text" placeholder="Nome do Cidadão" autocomplete="off">
-            <input type="number" placeholder="Num. Filhos" min="0" autocomplete="off">
-            <input type="number" placeholder="Salário (R$)" autocomplete="off">
+            <input type="text" placeholder="Nome do Cidadão" autocomplete="off" id="nome">
+            <input type="number" placeholder="Num. Filhos" min="0" autocomplete="off" id="filhos">
+            <input type="number" placeholder="Salário (R$)" autocomplete="off" id="salario">
             <button type="button" name="adicionar" id="adicionar">Adicionar</button>
         </fieldset>
         <fieldset>
             <table>
-                <tr>
-                    <th>Nome</th>
-                    <th>Número de filhos</th>
-                    <th>Salário</th>
-                </tr>
-                <tr>
-                    <td>Ada Lovelace</td>
-                    <td>1</td>
-                    <td>RS 150.0</td>
-                </tr>
-                <tr>
-                    <td>Ada Lovelace</td>
-                    <td>1</td>
-                    <td>RS 150.0</td>
-                </tr>
+                <tbody id="tabela">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Número de filhos</th>
+                        <th>Salário</th>
+                    </tr>
+                </tbody>
             </table>
         </fieldset>
 

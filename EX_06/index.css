@@ -26,4 +26,6 @@ form .botoes {
 
 form .inputs {
     border: 0;
+    width: 80%;
+    margin: auto;
 }

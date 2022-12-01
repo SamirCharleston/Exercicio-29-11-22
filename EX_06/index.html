@@ -26,12 +26,12 @@
         esconde as mensagens de erro caso tenham ocorrido.
     </article>
 
-    <form action="" method="POST">
+    <form action="" method="POST" id="formulario">
         <fieldset class="campos">
             <h1>Login</h1>
             <fieldset class="inputs">
                 <label for="nome">Nome </label>
-                <input type="text" id="nome" name="nome" required>
+                <input type="text" id="nome" name="nome" autocomplete="off" required>
             </fieldset>
 
             <fieldset class="inputs">
@@ -41,9 +41,11 @@
         </fieldset>
 
         <fieldset class="botoes">
-            <input type="button" name="enviar" value="Enviar" class="botao">
-            <input type="button" name="enviar" value="Reset" class="botao">
+            <input type="button" name="enviar" value="Enviar" class="botao" id="enviar">
+            <input type="reset" name="reset" value="Reset" class="botao" id="reset">
         </fieldset>
+
+        <h3 id="info"></h3>
     </form>
 
     <script type="text/javascript" src="index.js"></script>

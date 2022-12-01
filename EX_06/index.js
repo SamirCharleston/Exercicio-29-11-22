@@ -1,10 +1,12 @@
+let formulario = document.getElementById("formulario");
 let campos = {
     nome: document.getElementById("nome"),
     senha: document.getElementById("senha")
 }
 
 let botoes = {
-    enviar: document.getElementById("enviar")
+    enviar: document.getElementById("enviar"),
+    resetar: document.getElementById("reset")
 }
 
 let info = document.getElementById("info");
@@ -15,6 +17,7 @@ let usuarios = {
 }
 
 botoes.enviar.addEventListener("click", enviarRequisicao);
+botoes.resetar.addEventListener("click", resetarCampos);
 
 function enviarRequisicao() {
 
@@ -33,4 +36,10 @@ function enviarRequisicao() {
     } else if (nomeValido) {
         info.innerText = "Senha Inválida";
     }
+
+    info.style.display = "unset";
+}
+
+function resetarCampos() {
+    info.style.display = "none";
 }

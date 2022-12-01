@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="POST">
+        <h1>Pesquisa entre habitantes</h1>
+
+        <fieldset class="campos">
+            <input type="text" placeholder="Nome do Cidadão" autocomplete="off">
+            <input type="number" placeholder="Num. Filhos" min="0" autocomplete="off">
+            <input type="number" placeholder="Salário (R$)" autocomplete="off">
+            <button type="button" name="adicionar" id="adicionar">Adicionar</button>
+        </fieldset>
+        <fieldset>
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Número de filhos</th>
+                    <th>Salário</th>
+                </tr>
+                <tr>
+                    <td>Ada Lovelace</td>
+                    <td>1</td>
+                    <td>RS 150.0</td>
+                </tr>
+                <tr>
+                    <td>Ada Lovelace</td>
+                    <td>1</td>
+                    <td>RS 150.0</td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <article>
+            <h2>Informações gerais</h2>
+            <article class="info">
+                <p>Media de salário da população: </p>
+            </article>
+            <article class="info">
+                <p>Media de número de filhos: </p>
+            </article>
+            <article class="info">
+                <p>Maior salario de habitantes: </p>
+            </article>
+            <article class="info">
+                <p>Percentual de pessoas com salário menor que R$ 1500,00: </p>
+            </article>
+        </article>
+        <button type="button" name="atualizar" id="atualizar">Atualizar Dados</button>
+    </form>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

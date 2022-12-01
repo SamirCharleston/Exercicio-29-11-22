@@ -30,24 +30,37 @@ lerDados();
 
 campos.adicionar.addEventListener("click", adicionarDados);
 
+
 function adicionarDados() {
+    const regex = /[^a-z \s]/i;
+
     let dadosLidos = {
         nome: "",
         filhos: 0,
         salario: 0
     }
 
-    let validado = true;
+    let validacaoNome = validacaoSalarioFilho = somenteLetras = false;
 
     dadosLidos.nome = campos.nome.value;
     dadosLidos.filhos = Number(campos.filhos.value);
     dadosLidos.salario = Number(campos.salario.value);
 
-    if (typeof nome === "") {
-        alert(oii)
+    somenteLetras = regex.test(dadosLidos.nome);
+
+    if (dadosLidos.nome !== "" && !somenteLetras) {
+        validacaoNome = true;
+    } else {
+        alert("Digite o nome, sem numeros ou caracteres especiais.");
     }
 
-    if (validado) {
+    if (dadosLidos.filhos >= 0 && dadosLidos.salario >= 0) {
+        validacaoSalarioFilho = true;
+    } else {
+        alert("Preencha os campos Num. Filhos e Salário com valores válidos.");
+    }
+
+    if (validacaoNome && validacaoSalarioFilho) {
         let linha = document.createElement("tr");
         tabela.appendChild(linha);
 
@@ -73,7 +86,7 @@ function lerDados() {
         dadosLista[i].salario = dadosLista[i].salario.toFixed(1);
 
         listaElementosTr[i].innerHTML = `  <td>${dadosLista[i].nome}</td>
-                                        <td>${dadosLista[i].filhos}</td>
-                                        <td>R$ ${dadosLista[i].salario}</td>`
+                                            <td>${dadosLista[i].filhos}</td>
+                                            <td>R$ ${dadosLista[i].salario}</td>`
     }
 }

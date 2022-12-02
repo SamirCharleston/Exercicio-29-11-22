@@ -14,9 +14,9 @@
         <h1>Pesquisa entre habitantes</h1>
 
         <fieldset class="campos">
-            <input type="text" placeholder="Nome do Cidadão" autocomplete="off" id="nome">
-            <input type="number" placeholder="Num. Filhos" min="0" autocomplete="off" id="filhos">
-            <input type="number" placeholder="Salário (R$)" autocomplete="off" id="salario">
+            <input type="text" placeholder="Nome do Cidadão" autocomplete="off" required id="nome">
+            <input type="number" placeholder="Num. Filhos" min="0" autocomplete="off" required id="filhos">
+            <input type="number" placeholder="Salário (R$)" autocomplete="off" min="0" required id="salario">
             <button type="button" name="adicionar" id="adicionar">Adicionar</button>
         </fieldset>
         <fieldset>
@@ -34,16 +34,6 @@
         <article>
             <h2>Informações gerais</h2>
             <article class="info">
-                <p>Media de salário da população: </p>
-            </article>
-            <article class="info">
-                <p>Media de número de filhos: </p>
-            </article>
-            <article class="info">
-                <p>Maior salario de habitantes: </p>
-            </article>
-            <article class="info">
-                <p>Percentual de pessoas com salário menor que R$ 1500,00: </p>
             </article>
         </article>
         <button type="button" name="atualizar" id="atualizar">Atualizar Dados</button>
